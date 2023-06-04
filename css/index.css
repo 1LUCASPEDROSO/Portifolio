@@ -1,0 +1,11 @@
+.background
+{
+    background-color: rgb(16, 15, 15);
+    color:rgb(241, 246, 249);
+    height: 1000px;
+    width: 100%;
+}
+.backgound_highlight
+{
+    color: rgb(15, 61, 62);
+}
