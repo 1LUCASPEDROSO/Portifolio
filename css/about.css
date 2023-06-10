@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+:root
+{
+    --background:rgb(16, 15, 15);
+    --mainFontColor:rgb(241, 246, 249);
+    --highlighTextColor:rgb(15, 61, 62);
+    --titleFont:'Kanit', sans-serif;
+    --secondFont:'Roboto', sans-serif;
+    --titleSize: 2.0rem;
+    --textSize:1.0rem
+}
 *
 {
     margin: 0;
@@ -8,8 +18,8 @@
 .background
 {
     box-sizing: border-box;
-    background-color: rgb(16, 15, 15);
-    color:rgb(241, 246, 249);
+    background-color: var(--background);
+    color:var(--mainFontColor);
     width: 100%;
 }
 .mainHeader
@@ -24,10 +34,10 @@
 }
 .menuLink
 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-family: var(--secondFont);
+    font-size: var(--textSize);
     text-decoration: none;
-    color:rgb(241, 246, 249);
+    color:var(--mainFontColor);
 }
 .apresentation
 {
@@ -35,6 +45,9 @@
     margin: 5% 10% 10% 10%;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .topicApresentation
 {
@@ -45,19 +58,19 @@
 }
 .titleApresentation
 {
-    font-size: 2.5em;
-    font-family: 'Kanit', sans-serif;
+    font-size: var(--titleSize);
+    font-family: var(--titleFont);
 }
 .textApresentation
 {
-    font-size: 1.1em;
-    font-family: 'Roboto', sans-serif;
+    font-size: var(--textSize);
+    font-family: var(--secondFont);
 }
 .subtitleApresentationLinks
 {
-    font-family: 'Kanit',sans-serif;
+    font-family: var(--titleFont);
     font-weight: 400;
-    font-size: 2.0em;
+    font-size: var(--titleSize);
 }
 
 .linksApresentation
@@ -65,37 +78,37 @@
     display: flex;
     justify-content: center;
     gap: 1.5vh;
-    color: rgb(241, 246, 249);
+    color: var(--mainFontColor);
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--textSize);
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--secondFont);
     width: 50%;
     text-decoration: none;
     border-radius: 8px;
-    border: 3px solid rgb(15, 61, 62);
+    border: 3px solid var(--highlighTextColor);
 }
 .linksApresentation:hover
 {
- background-color: rgb(15, 61, 62);
+ background-color: var(--highlighTextColor);
 }
 .mainFooter
 {
-    font-size: 2.0em;
-    font-family: 'Kanit', sans-serif;
-    background-color: rgb(15, 61, 62);
+    font-size: var(--textSize);
+    font-family: var(--titleFont);
+    background-color: var(--highlighTextColor);
     padding: 0.2vh;
     text-align: center;
 }
 .topics
 {
     list-style-type: none;
-    font-size: 1.0em;
-    font-family: 'Roboto', sans-serif;
+    font-size: var(--textSize);
+    font-family: var(--secondFont);
 }
 .topics:hover
 {
- font-size: 1.05em;
+ font-size: 1.1rem;
  cursor: pointer;
 }
 ul

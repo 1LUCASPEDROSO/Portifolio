@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+:root
+{
+    --background:rgb(16, 15, 15);
+    --mainFontColor:rgb(241, 246, 249);
+    --highlighTextColor:rgb(15, 61, 62);
+    --titleFont:'Kanit', sans-serif;
+    --secondFont:'Roboto', sans-serif;
+    --titleSize: 2rem;
+    --textSize:1rem
+}
+
 *
 {
     margin: 0;
@@ -8,8 +19,8 @@
 .background
 {
     box-sizing: border-box;
-    background-color: rgb(16, 15, 15);
-    color:rgb(241, 246, 249);
+    background-color: var(--background);
+    color: var(--mainFontColor);
     width: 100%;
 }
 .mainHeader
@@ -24,10 +35,10 @@
 }
 .menuLink
 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-family: var(--secondFont);
+    font-size: var(--textSize);
     text-decoration: none;
-    color:rgb(241, 246, 249);
+    color: var(--mainFontColor);
 }
 .apresentation
 {
@@ -35,27 +46,30 @@
     align-items: center;
     justify-content: space-between;
     margin: 5% 10% 10% 5%;
+    gap: 5%;
 }
 .backgound_highlight
 {
-    color: rgb(15, 61, 62);
+    color: var(--highlighTextColor);
 }
 .blockApresentation
 {
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     gap: 2.5vh;
 }
 .titleApresentation
 {
-    font-size: 3em;
-    font-family: 'Kanit', sans-serif;
+    font-size: var(--titleSize);
+    font-family: var(--mainFont);
+    text-align: justify;
 }
 .textApresentation
 {
-    font-size: 1.8em;
-    font-family: 'Roboto', sans-serif;
+    font-size: var(--textSize);
+    font-family: var(--secondFont);
+    text-align: justify;
 }
 .blockLinks
 {
@@ -69,9 +83,9 @@
 
 .subtitleApresentationLinks
 {
-    font-family: 'Kanit',sans-serif;
+    font-family: var(--secondFont);
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: var(--textSize);
 }
 
 .linksApresentation
@@ -79,25 +93,49 @@
     display: flex;
     justify-content: center;
     gap: 1.5vh;
-    color: rgb(241, 246, 249);
+    color: var(--mainFontColor);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: var(--textSize);
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-    width: 50%;
+    font-family: var(--secondFont);
+    width: 35%;
     text-decoration: none;
-    border-radius: 8px;
-    border: 3px solid rgb(15, 61, 62);
+    border-radius: 0.5rem;
+    border: 3px solid var(--highlighTextColor);
 }
 .linksApresentation:hover
 {
- background-color: rgb(15, 61, 62);
+ background-color: var(--highlighTextColor);
+}
+.imageApreseantion
+{
+    width: 30%;
 }
 .mainFooter
 {
-    font-size: 2.0em;
-    font-family: 'Kanit', sans-serif;
-    background-color: rgb(15, 61, 62);
+    font-size: var(--textSize);
+    font-family: var(--titleFont);
+    background-color: var(--highlighTextColor);
     padding: 0.2vh;
     text-align: center;
+}
+
+@media (max-width:600px) {
+    .apresentation
+    {
+        flex-direction: column-reverse;
+    }
+    .mainHeader
+    {
+        padding: 6% 0% 0% 10%;
+    }
+    .menu
+    {
+        justify-content: center;
+    }
+    .blockApresentation
+    {
+        width: auto;
+    }
+
 }
