@@ -1,78 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
-:root
-{
-    --background:rgb(16, 15, 15);
-    --mainFontColor:rgb(241, 246, 249);
-    --highlighTextColor:rgb(15, 61, 62);
-    --titleFont:'Kanit', sans-serif;
-    --secondFont:'Roboto', sans-serif;
+
+:root {
+    --background: rgb(16, 15, 15);
+    --mainFontColor: rgb(241, 246, 249);
+    --highlighTextColor: rgb(15, 61, 62);
+    --titleFont: 'Kanit', sans-serif;
+    --secondFont: 'Roboto', sans-serif;
     --titleSize: 2rem;
-    --textSize:1rem
+    --textSize: 1rem
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-.background
-{
+.background {
     box-sizing: border-box;
     background-color: var(--background);
     color: var(--mainFontColor);
     width: 100%;
 }
-.mainHeader
-{
+
+.mainHeader {
     padding: 2% 0% 0% 10%;
     z-index: 1;
 }
-.menu
-{
+
+.menu {
     display: flex;
     gap: 5%;
 }
-.menuLink
-{
+
+.menuLink {
     font-family: var(--secondFont);
     font-size: var(--textSize);
     text-decoration: none;
     color: var(--mainFontColor);
 }
-.apresentation
-{
+
+.apresentation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5% 10% 10% 5%;
     gap: 5%;
 }
-.backgound_highlight
-{
+
+.backgound_highlight {
     color: var(--highlighTextColor);
 }
-.blockApresentation
-{
+
+.blockApresentation {
     width: 55%;
     display: flex;
     flex-direction: column;
     gap: 2.5vh;
+    margin-left: 12%;
 }
-.titleApresentation
-{
+
+.titleApresentation {
     font-size: var(--titleSize);
     font-family: var(--mainFont);
     text-align: justify;
 }
-.textApresentation
-{
+
+.textApresentation {
     font-size: var(--textSize);
     font-family: var(--secondFont);
     text-align: justify;
 }
-.blockLinks
-{
+
+.blockLinks {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,15 +80,13 @@
     gap: 3.0vh;
 }
 
-.subtitleApresentationLinks
-{
+.subtitleApresentationLinks {
     font-family: var(--secondFont);
     font-weight: 400;
     font-size: var(--textSize);
 }
 
-.linksApresentation
-{
+.linksApresentation {
     display: flex;
     justify-content: center;
     gap: 1.5vh;
@@ -98,44 +95,79 @@
     font-size: var(--textSize);
     font-weight: 600;
     font-family: var(--secondFont);
-    width: 35%;
+    width: 50%;
+    height: 5vh;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 3px solid var(--highlighTextColor);
 }
-.linksApresentation:hover
-{
- background-color: var(--highlighTextColor);
+
+.textLinks {
+    margin-top: 2%;
 }
-.imageApreseantion
-{
-    width: 30%;
+
+.linksApresentation:hover {
+    background-color: var(--highlighTextColor);
 }
-.mainFooter
-{
+
+.imageApreseantion {
+    width: 20%;
+}
+
+.mainFooter {
     font-size: var(--textSize);
     font-family: var(--titleFont);
     background-color: var(--highlighTextColor);
-    padding: 0.2vh;
+    padding: 2vh;
     text-align: center;
 }
 
 @media (max-width:600px) {
-    .apresentation
-    {
+    .apresentation {
         flex-direction: column-reverse;
+        margin-top: 25%;
+        gap: 5vh
     }
-    .mainHeader
-    {
+
+    .imageApreseantion {
+        width: 50%;
+    }
+
+    .mainHeader {
         padding: 6% 0% 0% 10%;
     }
-    .menu
-    {
-        justify-content: center;
+
+    .menu {
+        align-items: center;
     }
-    .blockApresentation
-    {
+
+    .blockApresentation {
         width: auto;
+    }
+    .titleApresentation {
+        margin-left: 15%;
+        width: 55%;
+        font-size: var(--titleSize);
+        font-family: var(--mainFont);
+        text-align:center;
+    }
+    .subtitleApresentationLinks {
+        font-family: var(--secondFont);
+        font-weight: 400;
+        font-size: var(--titleSize);
+    }
+
+    .blockLinks {
+        padding: 2.5vh;
+        gap: 5.5vh;
+    }
+
+    .linksApresentation {
+        height: 8vh;
+    }
+
+    .textLinks {
+        margin-top: 20%;
     }
 
 }

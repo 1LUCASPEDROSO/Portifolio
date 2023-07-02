@@ -25,7 +25,6 @@
 .mainHeader
 {
     padding: 2% 0% 0% 10%;
-    z-index: 1;
 }
 .menu
 {
@@ -61,8 +60,22 @@
     font-size: var(--titleSize);
     font-family: var(--titleFont);
 }
-.textApresentation
+.blockResume
 {
+    margin-left: 23%;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+
+}
+.blockTextApresentation
+{
+    padding: 2% 0% 0% 0%;
+    font-size: var(--textSize);
+    font-family: var(--secondFont);
+}
+.textApresentation
+{   padding: 2% 0% 0% 0%;
     font-size: var(--textSize);
     font-family: var(--secondFont);
 }
@@ -72,21 +85,29 @@
     font-weight: 400;
     font-size: var(--titleSize);
 }
-
+.linksResume
+{
+    text-decoration: none;
+    color:var(--mainFontColor);
+}
 .linksApresentation
 {
     display: flex;
     justify-content: center;
     gap: 1.5vh;
     color: var(--mainFontColor);
-    text-align: center;
     font-size: var(--textSize);
     font-weight: 600;
     font-family: var(--secondFont);
     width: 50%;
+    height: 8vh;
     text-decoration: none;
     border-radius: 8px;
     border: 3px solid var(--highlighTextColor);
+}
+.textLinks
+{
+    margin-top: 2.5%;
 }
 .linksApresentation:hover
 {
@@ -105,13 +126,20 @@
     list-style-type: none;
     font-size: var(--textSize);
     font-family: var(--secondFont);
+    padding: 1% 0% 0% 0%;
 }
-.topics:hover
+@media (max-width:600px) {
+    .apresentation
+    {
+        margin-top: 15%;
+        gap: 1vh
+    }
+    .textLinks
 {
- font-size: 1.1rem;
- cursor: pointer;
+    margin-top: 15%;
 }
-ul
+.mainHeader
 {
-    gap: 1.0vh;
+    padding: 8% 0% 0% 10%;
+}
 }
