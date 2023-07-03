@@ -135,7 +135,7 @@
     }
 
     .mainHeader {
-        padding: 6% 0% 0% 25%;
+        padding: 6% 0% 0% 15%;
     }
 
     .menu {
@@ -146,7 +146,7 @@
         width: auto;
     }
     .titleApresentation {
-        margin-left: 15%;
+        margin-left: 12%;
         width: 55%;
         font-size: 2rem;
         font-family: var(--mainFont);
@@ -170,12 +170,12 @@
 
     .linksApresentation {
         height: 10vh;
-        width: 65%;
+        width: 70%;
         
     }
 
     .textLinks {
-        margin-top: 10%;
+        margin-top: 12%;
     }
 
 }

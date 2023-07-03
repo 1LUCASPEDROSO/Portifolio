@@ -136,7 +136,7 @@
     }
     .textLinks
 {
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .mainHeader
 {
@@ -146,12 +146,16 @@
 {
     font-size: 2rem;
 }
-.textApresentation
+.textApresentation,.topics
 {
     font-size: 1rem;
 }
 .subtitleApresentationLinks
 {
     font-size: 1rem;
+}
+.linksApresentation
+{
+    width: 65%;
 }
 }
