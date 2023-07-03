@@ -148,9 +148,13 @@
     .titleApresentation {
         margin-left: 15%;
         width: 55%;
-        font-size: var(--titleSize);
+        font-size: 2rem;
         font-family: var(--mainFont);
         text-align:center;
+    }
+    .textApresentation
+    {
+        font-size: 1rem;
     }
     .subtitleApresentationLinks {
         font-family: var(--secondFont);
