@@ -132,6 +132,7 @@
 
     .imageApreseantion {
         width: 50%;
+        margin-left: 10%;
     }
 
     .mainHeader {
@@ -146,7 +147,7 @@
         width: auto;
     }
     .titleApresentation {
-        margin-left: 10%;
+        margin-left: 12%;
         width: 60%;
         font-size: 2rem;
         font-family: var(--mainFont);
