@@ -135,7 +135,7 @@
     }
 
     .mainHeader {
-        padding: 6% 0% 0% 10%;
+        padding: 6% 0% 0% 25%;
     }
 
     .menu {
@@ -155,6 +155,7 @@
     .textApresentation
     {
         font-size: 1rem;
+        text-align :-webkit-center;
     }
     .subtitleApresentationLinks {
         font-family: var(--secondFont);
@@ -168,11 +169,13 @@
     }
 
     .linksApresentation {
-        height: 8vh;
+        height: 10vh;
+        width: 65%;
+        
     }
 
     .textLinks {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
 }
