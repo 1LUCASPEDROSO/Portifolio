@@ -6,8 +6,8 @@
     --highlighTextColor: rgb(15, 61, 62);
     --titleFont: 'Kanit', sans-serif;
     --secondFont: 'Roboto', sans-serif;
-    --titleSize: 2rem;
-    --textSize: 1rem
+    --titleSize: 5rem;
+    --textSize: 2rem
 }
 
 * {
@@ -83,7 +83,7 @@
 .subtitleApresentationLinks {
     font-family: var(--secondFont);
     font-weight: 400;
-    font-size: var(--textSize);
+    font-size: var(--titleSize);
 }
 
 .linksApresentation {
@@ -119,6 +119,7 @@
     font-family: var(--titleFont);
     background-color: var(--highlighTextColor);
     padding: 2vh;
+    margin-top: 20%;
     text-align: center;
 }
 
